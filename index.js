@@ -487,9 +487,22 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */) {
-  /* Code here */
+function addArtist(array, id, name, years, genre, nationality, bio) {
+  array.push({ id, name, years, genre, nationality, bio });
+  return array;
 }
+
+addArtist(
+  artists,
+  20,
+  "Joshua Garno",
+  "1882 - 2020",
+  "Web Design",
+  "FrenchGermanAmerican",
+  "lorem ipsum"
+);
+
+console.log(artists);
 
 //
 //
