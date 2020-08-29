@@ -345,6 +345,14 @@ function getArtistByIndex(array, index) {
   /* code here */
 }
 
+function getArtistByIndex(array, index) {
+  return "The artist at index " + index + " is " + array[index].name;
+}
+
+const printNumArtist = getArtistByIndex(artists, 2);
+
+console.log(printNumArtist);
+
 /**
 
 //
