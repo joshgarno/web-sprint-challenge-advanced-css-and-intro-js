@@ -261,9 +261,9 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
-//console.log(artists[0].name);
+console.log(artists[0].name);
 
-//console.log(artists[2].bio);
+console.log(artists[2].bio);
 
 //
 //
@@ -299,6 +299,10 @@ const artists = [
 //
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
+
+artists[8].name = "Vincent Van Gogh";
+
+console.log(artists[8]);
 
 //
 //
@@ -351,7 +355,7 @@ function getArtistByIndex(array, index) {
 
 const printNumArtist = getArtistByIndex(artists, 2);
 
-//console.log(printNumArtist);
+console.log(printNumArtist);
 
 /**
 
@@ -518,7 +522,7 @@ addArtist(
   "lorem ipsum"
 );
 
-//console.log(artists);
+console.log(artists);
 
 //
 //
@@ -573,7 +577,7 @@ function lotsOfArt(array) {
 
 const printLotsArtists = lotsOfArt(artists);
 
-//console.log(printLotsArtists);
+console.log(printLotsArtists);
 
 //
 //
