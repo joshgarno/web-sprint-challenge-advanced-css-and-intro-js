@@ -223,39 +223,6 @@ const artists = [
 
 // 🖌🖼 M V P 🖼🖌 //
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 /* Task 1: Practice accessing data above by console.log-ing following items:
 
 (1) Name of the first artist (0th index) in the array
@@ -265,77 +232,11 @@ console.log(artists[0].name);
 
 console.log(artists[2].bio);
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 artists[8].name = "Vincent Van Gogh";
 
 console.log(artists[8]);
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -359,49 +260,16 @@ console.log(printNumArtist);
 
 /**
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array, num1, num2) {
   let timePeriode = [];
   for (let i = 0; i < array.length; i++) {
     let date = array[i].years.split(" ", 3);
-    firstDate = parseInt(date[0], 10);
-    secondDate = parseInt(date[2], 10);
-    if firstDate >1899 && secondDate < 2001 {
-    timePeriode.push(array[i].name);
+    let firstDate = parseInt(date[0], 10);
+    let secondDate = parseInt(date[2], 10);
+    if (firstDate >= num1 && secondDate <= num2) {
+      timePeriode.push(array[i].name);
     }
   }
   return timePeriode;
@@ -410,39 +278,6 @@ function get20s(array, num1, num2) {
 let printCentury = get20s(artists, 1900, 2000);
 
 console.log(printCentury);
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -463,39 +298,6 @@ function removeArtist(array, index) {
 const numArtists = removeArtist(artists, 2);
 
 console.log(numArtists);
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -527,39 +329,6 @@ addArtist(
 
 console.log(artists);
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
@@ -581,39 +350,6 @@ function lotsOfArt(array) {
 const printLotsArtists = lotsOfArt(artists);
 
 console.log(printLotsArtists);
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 // 🎨🎨 STRETCH 🎨🎨//
 
